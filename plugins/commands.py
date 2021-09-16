@@ -67,7 +67,7 @@ async def start(bot, cmd):
                 buttons = [
                     [
                         InlineKeyboardButton('Search again', switch_inline_query_current_chat=''),
-                        InlineKeyboardButton('More Bots', url='https://t.me/trtechguide')
+                        InlineKeyboardButton('More Bots', url='https://t.me/SLBotsofficial/28')
                     ]
                     ]
                 await bot.send_cached_media(
@@ -196,4 +196,4 @@ async def bot_info(bot, message):
             InlineKeyboardButton('Movie Updates', url='https://t.me/nstcentertainmentgroup')
         ]
         ]
-    await message.reply(text="<b>Developer : <a href='https://t.me/TharukRenuja'>TharukRenuja</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nUpdate Channel : <a href='https://t.me/SLBotsofficial'>SLBotsOfficial</a>\nSupport Group : <a href='https://t.me/trtechguide'>TRTECHGUIDE</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+    await message.reply(text="<b>Developer : <a href='https://t.me/TharukRenuja'>Tharuk Renuja</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nUpdate Channel : <a href='https://t.me/SLBotsofficial'>SLBotsOfficial</a>\nSupport Group : <a href='https://t.me/trtechguide'>TRTECHGUIDE</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
