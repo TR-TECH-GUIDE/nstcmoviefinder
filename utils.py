@@ -27,6 +27,7 @@ IClient = AsyncIOMotorClient(DATABASE_URI_2)
 imdbdb=client[DATABASE_NAME_2]
 imdb=Instance.from_db(imdbdb)
 
+#Media Register
 @instance.register
 class Media(Document):
     file_id = fields.StrField(attribute='_id')
@@ -40,6 +41,7 @@ class Media(Document):
     class Meta:
         collection_name = COLLECTION_NAME
 
+#IMDB Post Register
 @imdb.register
 class Poster(Document):
     imdb_id = fields.StrField(attribute='_id')
