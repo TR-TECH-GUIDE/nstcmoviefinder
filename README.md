@@ -5,7 +5,7 @@
 <br/>
 <br/>
 <a target="_blank">
-  <img align="right" height="250" width="400" alt="NSCTMOVIEFINDER" src="https://telegra.ph/file/9bca5220bb6be74d8abd6.jpg">
+  <img align="right" height="400" width="400" alt="NSCTMOVIEFINDER" src="https://telegra.ph/file/9bca5220bb6be74d8abd6.jpg">
 </a>
 
 - Custom captions for your files.
