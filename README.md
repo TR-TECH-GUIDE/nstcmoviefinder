@@ -1,7 +1,4 @@
 # NSTC MOVIE FINDER
-<p align="right">
-  <img src="https://telegra.ph/file/9bca5220bb6be74d8abd6.jpg" width='600"'>
-</p>
 
 ## Added Features
 * Custom captions for your files.
@@ -11,6 +8,10 @@
 * Once files saved in Database , exists until you manually deletes. (No Worry if post gets deleted from source channel.)
 * Added Force subscribe (Only channel subscribes can use the bot)
 * Ability to restrict groups(AUTH_GROUPS)
+
+<p align="right">
+  <img src="https://telegra.ph/file/9bca5220bb6be74d8abd6.jpg" width='600"'>
+</p>
 
 ## Installation
 
