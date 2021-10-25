@@ -101,3 +101,11 @@ Made with Python3
 Copyright permission under GNU Public License
 License -> https://github.com/TharukRenuja/NSTC-Movie-Finder/blob/main/LICENSE
 ```
+
+### Credits
+
+- [TR-TECH-GUIDE](https://github.com/TR-TECH-GUIDE)
+- [SUBIN](https://github.com/subinps)
+- [Mahesh](https://github.com/Mahesh0253) for Media Search Bot.
+- [TrojanzHex](https://github.com/TroJanzHEX) for Auto Filter Bot.
+- [Me](https://github.com/TharukRenuja) for Nothing🤣.
