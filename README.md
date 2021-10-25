@@ -1,6 +1,9 @@
 # NSTC MOVIE FINDER
 
 ## Added Features
+<p align="right">
+  <img src="https://telegra.ph/file/9bca5220bb6be74d8abd6.jpg" width='300"'>
+</p>
 * Custom captions for your files.
 * Index command to index all the files in a given channel.
 * Ability to Index Public Channels without being admin.
@@ -8,10 +11,6 @@
 * Once files saved in Database , exists until you manually deletes.
 * Added Force subscribe (Only channel subscribes can use the bot)
 * Ability to restrict groups(AUTH_GROUPS)
-
-<p align="right">
-  <img src="https://telegra.ph/file/9bca5220bb6be74d8abd6.jpg" width='300"'>
-</p>
 
 ## Installation
 
