@@ -1,7 +1,9 @@
-# Version 2.0 [Movie Search bot](https://github.com/TR-TECH-GUIDE/nstcmoviefinder)
+# NSTC MOVIE FINDER
+<p align="center">
+  <img src="https://telegra.ph/file/9bca5220bb6be74d8abd6.jpg" width='600"'>
+</p>
 
 ## Added Features
-* Imdb posters for autofilter.
 * Custom captions for your files.
 * Index command to index all the files in a given channel (No USER_SESSION Required).
 * Ability to Index Public Channels without being admin.
@@ -13,10 +15,14 @@
 ## Installation
 
 ### Easy Way
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/TR-TECH-GUIDE/nstcmoviefinder)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/TharukRenuja/NSTC-Movie-Finder)
+
 ### Hard Way
 
 ```bash
+#Cloning Source
+git clone https://github.com/TharukRenuja/NSTC-Movie-Finder.git
+
 # Create virtual environment
 python3 -m venv env
 
@@ -30,7 +36,7 @@ pip3 install -r requirements.txt
 # Edit info.py with variables as given below then run bot
 python3 bot.py
 ```
-Check [`sample_info.py`](sample_info.py) before editing [`info.py`](info.py) file
+Check [`info.py`](info.py) file & add your varibles.
 
 ## Variables
 
@@ -46,7 +52,7 @@ Check [`sample_info.py`](sample_info.py) before editing [`info.py`](info.py) fil
 ### Optional Variables
 * `OMDB_API_KEY`: OMBD_API_KEY to generate imdb poster for filter results.Get it from [omdbapi.com](http://www.omdbapi.com/apikey.aspx)
 * `CUSTOM_FILE_CAPTION` : A custom caption for your files. You can format it with file_name, file_size, file_caption.(supports html formating)
-Example: `<b>Join [TRTECHGUIDE Bots](https://t.me/trtechguide) for more useful bots</b>\n\n<code>{file_name}</code>\nSize{file_size}\n{file_caption}.`
+Example: `<b>Join [SLBotsOfficial](https://t.me/SLBotsOfficial) for more useful bots</b>\n\n<code>{file_name}</code>\nSize{file_size}\n{file_caption}.`
 * `AUTH_GROUPS` : ID of groups which bot should work as autofilter, bot can only work in thease groups. If not given , bot can be used in any group.
 * `COLLECTION_NAME`: Name of the collections. Defaults to Telegram_files. If you going to use same database, then use different collection name for each bot
 * `CACHE_TIME`: The maximum amount of time in seconds that the result of the inline query may be cached on the server
@@ -56,8 +62,7 @@ Example: `<b>Join [TRTECHGUIDE Bots](https://t.me/trtechguide) for more useful b
 * `START_MSG`: Welcome message for start command.
 
 ## Note
-* Currently [API used](http://www.omdbapi.com) here is allowing 1000 requests per day. [You may not get posters if its crossed](https://t.me/trtechguide). 
-Once a poster is fetched from OMDB , poster is saved to DB to reduce duplicate requests.
+* Currently [API used](http://www.omdbapi.com) here is allowing 1000 requests per day. Once a poster is fetched from OMDB , poster is saved to DB to reduce duplicate requests.
 
 ## Admin commands
 ```
@@ -74,9 +79,18 @@ logger - Get log file
 
 
 ## Support
-Contact Me On [Telegram](https://t.me/trtechguidebot)
+Contact Me On [Telegram](https://t.me/TharukRenuja)
 
-[Update Channel](https://t.me/trtechguide)
+[Bots Updates](https://t.me/SLBotsOfficial)
+[Movie Updates](https://t.me/nstcentertainment)
+[Movie Request Group](https://t.me/nstcentertainmentgroup)
+[Movie Request New Group](https://t.me/genuinemovieclub)
 
 ## License
 Code released under [The GNU General Public License](LICENSE).
+```
+Made with Python3
+(C) @TharukRenuja
+Copyright permission under GNU Public License
+License -> https://github.com/TharukRenuja/NSTC-Movie-Finder/blob/main/LICENSE
+```
