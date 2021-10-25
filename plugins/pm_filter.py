@@ -56,10 +56,10 @@ async def filter(client, message):
                 file_id = file.file_id
                 filename = f"[{get_size(file.file_size)}] {file.file_name}"
                 btn.append(
-                    [InlineKeyboardButton(text=f"{filename}",callback_data=f"trtechguide#{file_id}")]
+                    [InlineKeyboardButton(text=f"{filename}",callback_data=f"tgmoviedbbot#{file_id}")]
                     )
         else:
-            await client.send_sticker(chat_id=message.from_user.id, sticker='CAADBQADMwIAAtbcmFelnLaGAZhgBwI')
+            await client.send_sticker(chat_id=message.from_user.id, sticker='CAACAgUAAxkBAAEDJW1hdlBpkb5LEo253PEYNyLlIqRT8QACFwQAAirjYVaeazKnswSVICEE')
             return
 
         if not btn:
@@ -122,7 +122,7 @@ async def group(client, message):
                 file_id = file.file_id
                 filename = f"[{get_size(file.file_size)}] {file.file_name}"
                 btn.append(
-                    [InlineKeyboardButton(text=f"{filename}", url=f"https://telegram.dog/{nyva}?start=trtechguidebot_-_-_-_{file_id}")]
+                    [InlineKeyboardButton(text=f"{filename}", url=f"https://telegram.dog/{nyva}?start=tgmoviedbbot-_-_-_{file_id}")]
                 )
         else:
             return
@@ -272,11 +272,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "about":
             buttons = [
                 [
-                    InlineKeyboardButton('Update Channel', url='https://t.me/trtechguide'),
-                    InlineKeyboardButton('Source Code', url='https://github.com/TR-TECH-GUIDE/nstcmoviefinder')
+                    InlineKeyboardButton('Bot Updates', url='https://t.me/SLBotsOfficial'),
+                    InlineKeyboardButton('Movie Updates', url='https://t.me/nstcentertainment')
                 ]
                 ]
-            await query.message.edit(text="<b>Developer : <a href='https://t.me/trtechguide'>TRTECHGUIDE</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nSource Code : <a href='https://github.com/TR-TECH-GUIDE/nstcmoviefinder'>Click here</a>\nUpdate Channel : <a href='https://t.me/trtechguide'>TRTECHGUIDE Bots</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+            await query.message.edit(text="<b>This is a clone of [TGMOVIEDB](https://t.me/tgmoviedbbot)\nA project By @SLBotsOfficial👑\n<b>Developer : <a href='https://t.me/TharukRenuja'>Tharuk Renuja</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nSource Code : <a href='https://github.com/TharukRenuja/NSTC-Movie-Finder'>Click here</a>\nUpdate Channel : <a href='https://t.me/SLBotsOfficial'>SLBotsOfficial</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
 
 
@@ -297,8 +297,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('More Bots', url='https://t.me/trtechguide'),
-                        InlineKeyboardButton('Update Channel', url='https://t.me/trtechguide')
+                        InlineKeyboardButton('Bot Updates', url='https://t.me/SLBotsOfficial'),
+                        InlineKeyboardButton('Movie Updates', url='https://t.me/nstcentertainment')
                     ]
                     ]
                 
@@ -329,8 +329,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{title}"
                 buttons = [
                     [
-                        InlineKeyboardButton('More Bots', url='https://t.me/trtechguide'),
-                        InlineKeyboardButton('Update Channel', url='https://t.me/nstcentertainmentgroup')
+                        InlineKeyboardButton('Bot Updates', url='https://t.me/SLBotsOfficial'),
+                        InlineKeyboardButton('Movie Updates', url='https://t.me/nstcentertainment')
                     ]
                     ]
                 
