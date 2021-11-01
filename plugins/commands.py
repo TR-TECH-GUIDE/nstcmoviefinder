@@ -123,7 +123,7 @@ async def start(bot, cmd):
                 [
                     [
                         InlineKeyboardButton("Search Here", switch_inline_query_current_chat=''),
-                        InlineKeyboardButton("Switch to PM", url="t.me/tgmoviedbbot?start)
+                        InlineKeyboardButton("Switch to PM", url="t.me/tgmoviedbbot?start=true")
                     ]
                 ]
             )
