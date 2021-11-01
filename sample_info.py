@@ -1,5 +1,5 @@
 # Bot information
-SESSION = 'Movie_search'
+SESSION = 'Media_search'
 USER_SESSION = 'User_Bot'
 API_ID = 12345
 API_HASH = '0123456789abcdef0123456789abcdef'
@@ -21,12 +21,4 @@ DATABASE_URI = "mongodb://[username:password@]host1[:port1][,...hostN[:portN]][/
 DATABASE_NAME = 'Telegram'
 COLLECTION_NAME = 'channel_files'  # If you are using the same database, then use different collection name for each bot
 
-# Messages
-START_MSG = """
-**Hi, I'm Movie Search bot**
 
-Here you can search Movies in inline mode. Just press follwing buttons and start searching.
-"""
-
-SHARE_BUTTON_TEXT = 'Checkout {username} for searching files'
-INVITE_MSG = 'Please join @.... to use this bot'
