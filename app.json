@@ -1,5 +1,5 @@
 {
-    "name": "EvaMariaBot",
+    "name": "Movie Search bot",
     "description": "When you going to send file on telegram channel this bot will save that in database, So you can search that easily in inline mode",
     "keywords": [
       "telegram",
@@ -14,8 +14,8 @@
       "index",
       "inline"
     ],
-    "website": "https://github.com/EvamariaTG/EvaMaria",
-    "repository": "https://github.com/EvamariaTG/EvaMaria",
+    "website": "https://t.me/trtechguide",
+    "repository": "https://github.com/TR-TECH-GUIDE/nstcmoviefinder",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
@@ -37,14 +37,6 @@
             "description": "Username or ID of Admin. Separate multiple Admins by space.",
             "value": ""
         },
-        "PICS": {
-            "description": "Add some telegraph link of pictures .",
-            "value": ""
-        },
-        "LOG_CHANNEL": {
-            "description": "Bot Logs,Give a channel id with -100xxxxxxx",
-            "value": ""
-        },
         "AUTH_USERS": {
             "description": "Username or ID of users to give access of inline search. Separate multiple users by space.\nLeave it empty if you don't want to restrict bot usage.",
             "value": "",
@@ -54,10 +46,20 @@
             "description": "ID of channel.Make sure bot is admin in this channel. Without subscribing this channel users cannot use bot.",
             "value": "",
             "required": false
-        },   
+        },
+        "START_MSG": {
+            "description": "Welcome message for start command",
+            "value": "**Hi, I'm [Movie Search Bot](https://github.com/TR-TECH-GUIDE/nstcmoviefinder) or you can call me as Auto-Filter Bot**\n\nHere you can search files in Inline mode as well as PM, Use the below buttons to search files or send me the name of file to search.",
+            "required": false
+        },
         "USE_CAPTION_FILTER": {
             "description": "Whether bot should use captions to improve search results. (True False)",
             "value": "False",
+            "required": false
+        },
+        "OMDB_API_KEY": {
+            "description": "Your OMBD API KEY, Fill if you want to generate a imdb poster of movie in autofilter.",
+            "value": "",
             "required": false
         },
         "CUSTOM_FILE_CAPTION": {
@@ -65,12 +67,17 @@
             "value": "",
             "required": false
         },
+        "AUTH_GROUPS": {
+            "description": "ID of groups which bot should work as autofilter, bot can only work in thease groups. If not given , bot can be used in any group.",
+            "value": "",
+            "required": false
+        },
         "DATABASE_URI": {
-            "description": "mongoDB URI. Get this value from https://www.mongodb.com. For more help watch this video - https://youtu.be/dsuTn4qV2GA",
+            "description": "mongoDB URI. Get this value from https://www.mongodb.com",
             "value": ""
         },
         "DATABASE_NAME": {
-            "description": "Name of the database in mongoDB. For more help watch this video - https://youtu.be/dsuTn4qV2GA",
+            "description": "Name of the database in mongoDB.",
             "value": ""
         },
         "COLLECTION_NAME": {

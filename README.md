@@ -1,36 +1,49 @@
-<h1 align="center">
-  <b>𝓝𝓢𝓣𝓒 𝓜𝓞𝓥𝓘𝓔 𝓕𝓘𝓝𝓓𝓔𝓡</b>
-</h1>
+# NSTC MOVIE FINDER
+
+## Added Features
+
+<br/>
+<br/>
 <a target="_blank">
-  <p align="center">
-    <img height="400" width="400" alt="NSCTMOVIEFINDER" src="https://telegra.ph/file/9bca5220bb6be74d8abd6.jpg">
-  </p>
+  <img align="right" height="400" width="400" alt="NSCTMOVIEFINDER" src="https://telegra.ph/file/9bca5220bb6be74d8abd6.jpg">
 </a>
 
+- Custom captions for your files.
+- Index command to index all the files in a given channel.
+- Ability to Index Public Channels without being admin.
+- Support Auto-Filter (Both in PM and in Groups)
+- Once files saved in Database , exists until you manually deletes.
+- Added Force subscribe (Only channel subscribes can use the bot)
+- Ability to restrict groups(AUTH_GROUPS)
 
-[![Stars](https://img.shields.io/github/stars/TharukRenuja/NSTC-Movie-Finder?style=flat-square&color=yellow)](https://github.com/TharukRenuja/NSTC-Movie-Finder/stargazers)
-[![Forks](https://img.shields.io/github/forks/TharukRenuja/NSTC-Movie-Finder?style=flat-square&color=orange)](https://github.com/TharukRenuja/NSTC-Movie-Finder/fork)
-[![Size](https://img.shields.io/github/repo-size/TharukRenuja/NSTC-Movie-Finder?style=flat-square&color=green)](https://github.com/TharukRenuja/NSTC-Movie-Finder/)   
-[![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/TharukRenuja/NSTC-Movie-Finder)   
-[![Contributors](https://img.shields.io/github/contributors/TharukRenuja/NSTC-Movie-Finder?style=flat-square&color=green)](https://github.com/TharukRenuja/NSTC-Movie-Finder/graphs/contributors)
-[![License](https://img.shields.io/badge/License-AGPL-blue)](https://github.com/TharukRenuja/NSTC-Movie-Finder/blob/v2/LICENSE)
-[![Sparkline](https://stars.medv.io/EvamariaTG/EvaMaria.svg)](https://stars.medv.io/TharukRenuja/NSTC-Movie-Finder)
+<br/>
+<br/>
 
+## Installation
 
-## Features
+### Easy Way
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/TharukRenuja/NSTC-Movie-Finder)
 
-- [x] Auto Filter
-- [x] Manuel Filter
-- [x] IMDB
-- [x] Admin Commands
-- [x] Broadcast
-- [x] Index
-- [x] IMDB search
-- [x] Inline Search
-- [x] Random pics
-- [x] ids and User info 
-- [x] Stats, Users, Chats, Ban, Unban, Leave, Disable, Channel
+### Hard Way
 
+```bash
+#Cloning Source
+git clone https://github.com/TharukRenuja/NSTC-Movie-Finder.git
+
+# Create virtual environment
+python3 -m venv env
+
+# Activate virtual environment
+env\Scripts\activate.bat # For Windows
+source env/bin/activate # For Linux or MacOS
+
+# Install Packages
+pip3 install -r requirements.txt
+
+# Edit info.py with variables as given below then run bot
+python3 bot.py
+```
+Check [`info.py`](info.py) file & add your varibles.
 
 ## Variables
 
@@ -42,63 +55,36 @@
 * `ADMINS`: Username or ID of Admin. Separate multiple Admins by space
 * `DATABASE_URI`: [mongoDB](https://www.mongodb.com) URI. Get this value from [mongoDB](https://www.mongodb.com).
 * `DATABASE_NAME`: Name of the database in [mongoDB](https://www.mongodb.com).
-* `LOG_CHANNEL` : A channel to log the activities of bot. Make sure bot is an admin in the channel.
+
 ### Optional Variables
-* `PICS`: Telegraph links of images to show in start message.( Multiple images can be used seperated by space )
-* Check [info.py](https://github.com/TharukRenuja/NSTC-Movie-Finder/blob/v2/info.py) for more
+* `OMDB_API_KEY`: OMBD_API_KEY to generate imdb poster for filter results.Get it from [omdbapi.com](http://www.omdbapi.com/apikey.aspx)
+* `CUSTOM_FILE_CAPTION` : A custom caption for your files. You can format it with file_name, file_size, file_caption.(supports html formating)
+Example: `<b>Join [SLBotsOfficial](https://t.me/SLBotsOfficial) for more useful bots</b>\n\n<code>{file_name}</code>\nSize{file_size}\n{file_caption}.`
+* `AUTH_GROUPS` : ID of groups which bot should work as autofilter, bot can only work in thease groups. If not given , bot can be used in any group.
+* `COLLECTION_NAME`: Name of the collections. Defaults to Telegram_files. If you going to use same database, then use different collection name for each bot
+* `CACHE_TIME`: The maximum amount of time in seconds that the result of the inline query may be cached on the server
+* `USE_CAPTION_FILTER`: Whether bot should use captions to improve search results. (True/False)
+* `AUTH_USERS`: Username or ID of users to give access of inline search. Separate multiple users by space. Leave it empty if you don't want to restrict bot usage.
+* `AUTH_CHANNEL`: ID of channel. Without subscribing this channel users cannot use bot.
+* `START_MSG`: Welcome message for start command.
 
-
-## Deploy
-You can deploy this bot anywhere.
-
-<details><summary>Deploy To Heroku</summary>
-<p>
-<br>
-<a href="https://heroku.com/deploy?template=https://github.com/TharukRenuja/NSTC-Movie-Finder/tree/v2">
-  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
-</a>
-</p>
-</details>
-
-<details><summary>Deploy To VPS</summary>
-<p>
-<pre>
-git clone https://github.com/TharukRenuja/NSTC-Movie-Finder
-# Install Packages
-pip3 install -r requirements.txt
-Edit info.py with variables as given below then run bot
-python3 bot.py
-</pre>
-</p>
-</details>
-
+## Note
+* Currently [API used](http://www.omdbapi.com) here is allowing 1000 requests per day. Once a poster is fetched from OMDB , poster is saved to DB to reduce duplicate requests.
 
 ## Admin commands
 ```
-• /logs - to get the rescent errors
-• /stats - to get status of files in db.
-* /filter - add manual filters
-* /filters - view filters
-* /connect - connect to PM.
-* /disconnect - disconnect from PM
-* /del - delete a filter
-* /delall - delete all filters
-* /deleteall - delete all index(autofilter)
-* /delete - delete a specific file from index.
-* /info - get user info
-* /id - get tg ids.
-* /imdb - fetch info from imdb.
-• /users - to get list of my users and ids.
-• /chats - to get list of the my chats and ids 
-• /index  - to add files from a channel
-• /leave  - to leave from a chat.
-• /disable  -  do disable a chat.
-* /enable - re-enable chat.
-• /ban  - to ban a user.
-• /unban  - to unban a user.
-• /channel - to get list of total connected channels
-• /broadcast - to broadcast a message to all Eva Maria users
+channel - Get basic infomation about channels
+total - Show total of saved files
+delete - Delete file from database
+index - Index all files from channel.
+logger - Get log file
 ```
+
+## Tips
+* You can use `|` to separate query and file type while searching for specific type of file. For example: `Avengers | video`
+* If you don't want to create a channel or group, use your chat ID / username as the channel ID. When you send a file to a bot, it will be saved in the database.
+
+
 ## Support
 Contact Me On [Telegram](https://t.me/TharukRenuja)
 
@@ -115,21 +101,11 @@ Made with Python3
 Copyright permission under GNU Public License
 License -> https://github.com/TharukRenuja/NSTC-Movie-Finder/blob/main/LICENSE
 ```
-## Credits
+
+### Credits
 
 - [TR-TECH-GUIDE](https://github.com/TR-TECH-GUIDE)
 - [SUBIN](https://github.com/subinps)
 - [Mahesh](https://github.com/Mahesh0253) for Media Search Bot.
 - [TrojanzHex](https://github.com/TroJanzHEX) for Auto Filter Bot.
 - [Me](https://github.com/TharukRenuja) for Nothing🤣.
-- [EvaMaria](https://github.com/EvaMaria) for EvaMaria Bot.
-
-## Thanks to 
- - Thanks To Dan For His Awsome [Libary](https://github.com/pyrogram/pyrogram)
- - Thanks To Mahesh For His Awesome [Media-Search-bot](https://github.com/Mahesh0253/Media-Search-bot)
- - Thanks To [Trojanz](https://github.com/trojanzhex) for Their Awesome [Unlimited Filter Bot](https://github.com/TroJanzHEX/Unlimited-Filter-Bot) And [AutoFilterBoT](https://github.com/trojanzhex/auto-filter-bot)
- - Thanks To All Everyone In This Journey
-
-## Disclaimer
-[![GNU Affero General Public License 2.0](https://www.gnu.org/graphics/agplv3-155x51.png)](https://www.gnu.org/licenses/agpl-3.0.en.html#header)    
-Licensed under [GNU AGPL 2.0.](https://github.com/TharukRenuja/NSTC-Movie-Finder/blob/v2/LICENSE)
