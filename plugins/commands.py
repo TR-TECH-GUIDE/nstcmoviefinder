@@ -7,7 +7,7 @@ from utils import Media, get_file_details
 from pyrogram.errors import UserNotParticipant
 logger = logging.getLogger(__name__)
 
-@Client.on_message(filters.private & filters.command("start"))
+@Client.on_message(filters.command & filters.private("start"))
 async def start(bot, cmd):
     usr_cmdall1 = cmd.text
     if usr_cmdall1.startswith("/start tgmoviedbbot"):
