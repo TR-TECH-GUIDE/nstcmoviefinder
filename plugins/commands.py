@@ -103,11 +103,11 @@ async def start(bot, cmd):
                         InlineKeyboardButton("Go Inline", switch_inline_query="")
                     ],
                     [
-                        InlineKeyboardButton("About", callback_data="about")
+                        InlineKeyboardButton("About", callback_data="about"),
                         InlineKeyboardButton("Other Bots", url="https://t.me/SLBotsofficial/28")
                     ],
                     [
-                        InlineKeyboardButton("➕ Add Me to your group ➕",url="t.me/tgmoviedbbot?startgroup=true",)
+                        InlineKeyboardButton("➕ Add Me to your group ➕",url="t.me/tgmoviedbbot?startgroup=true")
                     ]
                 ]
             )
