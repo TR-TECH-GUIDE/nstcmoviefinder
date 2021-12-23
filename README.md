@@ -122,7 +122,7 @@ License -> https://github.com/TharukRenuja/NSTC-Movie-Finder/blob/main/LICENSE
 - [Mahesh](https://github.com/Mahesh0253) for Media Search Bot.
 - [TrojanzHex](https://github.com/TroJanzHEX) for Auto Filter Bot.
 - [Me](https://github.com/TharukRenuja) for Nothing🤣.
-- [EvaMaria](https://github.com/EvaMaria) for EvaMaria Bot.
+- [EvaMariaTG](https://github.com/EvaMariaTG) for EvaMaria Bot.
 
 ## Thanks to 
  - Thanks To Dan For His Awsome [Libary](https://github.com/pyrogram/pyrogram)
